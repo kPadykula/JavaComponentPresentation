@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from "@angular/router";
 import { AppRoutingModule } from "./app-routing.module";
 import {PublicModule} from "./public/public.module";
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {PublicModule} from "./public/public.module";
     BrowserAnimationsModule,
     AppRoutingModule,
     RouterModule,
-    PublicModule
+    PublicModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [
