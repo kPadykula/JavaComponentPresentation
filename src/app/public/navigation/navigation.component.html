@@ -1,0 +1,16 @@
+
+<nav>
+  <ul>
+    <li>
+      <button mat-button [routerLink]="['']">Home</button></li>
+    <li>
+      <button mat-button [matMenuTriggerFor]="components">Components</button>
+    </li>
+  </ul>
+  <mat-menu #components>
+    <button mat-menu-item [routerLink]="['components', 'keyboard']">Keyboard</button>
+    <button mat-menu-item [routerLink]="['components', 'display']">Display</button>
+    <button mat-menu-item [routerLink]="['components', 'logic']">Logic</button>
+  </mat-menu>
+</nav>
+

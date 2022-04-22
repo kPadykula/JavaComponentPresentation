@@ -5,7 +5,7 @@ import {NgModule} from "@angular/core";
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./public/public.module').then(m => m.PublicModule), // Lazy load account module
+    loadChildren: () => import('./public/public.module').then(m => m.PublicModule),
     data: { preload: true }
   }
 ];
@@ -14,6 +14,8 @@ const routes: Routes = [
   imports: [
     RouterModule.forRoot(routes)
   ],
-  exports: [RouterModule]
+  exports: [
+    RouterModule
+  ]
 })
 export class AppRoutingModule { }
