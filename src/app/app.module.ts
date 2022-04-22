@@ -8,9 +8,11 @@ import { AppRoutingModule } from "./app-routing.module";
 import {PublicModule} from "./public/public.module";
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import {TranslateCompiler, TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
+
+import {TranslateMessageFormatCompiler} from 'ngx-translate-messageformat-compiler';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,10 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
         provide: TranslateLoader,
         useFactory: HttpLoaderFactory,
         deps: [HttpClient]
+      },
+      compiler: {
+        provide: TranslateCompiler,
+        useClass: TranslateMessageFormatCompiler
       }
     })
   ],

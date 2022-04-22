@@ -33,7 +33,11 @@
 @mixin home-page-component-desc {
   h2 {
     color: $font-color-white;
+    font-family: HeaderText-Regular;
   }
 
-
+  p {
+    color: $font-color-dark;
+    font-family: ArticleText-Regular;
+  }
 }

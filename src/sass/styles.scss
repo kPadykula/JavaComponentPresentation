@@ -41,3 +41,27 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background:
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
 
+@font-face {
+  font-family: ArticleText-Regular;
+  src: url("/assets/fonts/PTSerif-Regular.ttf");
+}
+
+@font-face {
+  font-family: ArticleText-Bold;
+  src: url("/assets/fonts/PTSerif-Bold.ttf");
+}
+
+@font-face {
+  font-family: ArticleText-Italic;
+  src: url("/assets/fonts/PTSerif-Italic.ttf");
+}
+
+@font-face {
+  font-family: ArticleText-BoldItalic;
+  src: url("/assets/fonts/PTSerif-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: HeaderText-Regular;
+  src: url("/assets/fonts/BebasNue-Regular.ttf");
+}

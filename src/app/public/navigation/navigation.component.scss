@@ -1,5 +1,8 @@
 @import "src/sass/mixins";
 
+nav {
+  margin-top: 10px;
+}
 .menu-icon {
   font-size: 3rem;
   height: fit-content;
@@ -16,4 +19,13 @@
 
 .navigation-dropdown-item {
   @include main-navigation-dropdown-item;
+}
+
+.language-button {
+  @include main-button;
+  width: 80px;
+  height: 50px;
+}
+language-button:hover {
+  @include main-button-active;
 }

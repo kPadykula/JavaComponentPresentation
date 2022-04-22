@@ -1,7 +1,16 @@
 {
-  "home": {
-    "title": "Kalkulator",
-    "firstP": "Stworzyliśmy kalkulator, który oblicza pole oraz obwów dwu i trój wymiarowych figur",
-    "secondP": "Nasza aplikacja składa się z trzech osobnych komponentów."
-  }
+	"home": {
+		"firstP": "Stworzyliśmy kalkulator, który oblicza pole oraz obwów dwu i trój wymiarowych figur",
+		"secondP": "Nasza aplikacja składa się z trzech osobnych komponentów.",
+		"title": "Kalkulator"
+	},
+	"nav": {
+		"component": {
+			"display": "Wyświetlacz",
+			"keyboard": "Klawiatura",
+			"logic": "Logika"
+		},
+		"components": "Komponenty",
+		"home": "Home"
+	}
 }

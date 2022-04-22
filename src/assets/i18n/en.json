@@ -1,7 +1,16 @@
 {
-  "home": {
-    "title": "Calculator",
-    "firstP": "We create application which calculate area and perimeter of two and three dimensional geometric shape.",
-    "secondP": "Our application consist of three independent components."
-  }
+	"home": {
+		"firstP": "We create application which calculate area and perimeter of two and three dimensional geometric shape.",
+		"secondP": "Our application consist of three independent components.",
+		"title": "Calculator"
+	},
+	"nav": {
+		"component": {
+			"display": "Display",
+			"keyboard": "Keyboard",
+			"logic": "Logic"
+		},
+		"components": "Components",
+		"home": "Home"
+	}
 }
