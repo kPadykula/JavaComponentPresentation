@@ -7,3 +7,20 @@
 .main-button:active {
   @include main-button-active;
 }
+
+.firstRow {
+  height: 400px;
+}
+
+.firstCol {
+  border: 1px solid black;
+
+}
+
+.secondCol {
+
+}
+
+.component_description {
+  @include home-page-component-desc;
+}
