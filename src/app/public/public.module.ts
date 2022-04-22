@@ -8,6 +8,7 @@ import {MatButtonModule} from "@angular/material/button";
 import {MatMenuModule} from "@angular/material/menu";
 import {MatIconModule} from "@angular/material/icon";
 import {TranslateModule} from "@ngx-translate/core";
+import {MatCardModule} from "@angular/material/card";
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import {TranslateModule} from "@ngx-translate/core";
     MatMenuModule,
     MatIconModule,
     TranslateModule,
+    MatCardModule,
   ]
 })
 export class PublicModule { }

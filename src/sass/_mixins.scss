@@ -48,26 +48,89 @@
 
 // HOME PAGE //
 
-@mixin home-page-component-desc {
+@mixin home-page-component-desc($position) {
   * {
-    text-align: inherit;
-    margin-top: 5vh;
-  }
-  .title {
-    color: $font-color-white;
-    font-family: HeaderText-Regular;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: $font-size-header;
+    @if($position == right) {
+      text-align: right;
+    }@else {
+      text-align: left;
+    }
+    //margin-top: 5vh;
   }
 
-  .tekst {
-    color: $font-color-dark;
-    font-family: ArticleText-Regular;
-    font-size: $font-size-text;
+  .title {
+    @include title;
+  }
+
+  .title-reverse {
+    @include title-reverse;
+  }
+
+  .text {
+    @include text;
+  }
+
+  .text-reverse {
+    @include text-reverse;
   }
 }
 
+@mixin title {
+  color: $font-color-white;
+  font-family: HeaderText-Regular;
+  font-weight: bold;
+  font-size: $font-size-header;
+}
+
+@mixin title-reverse {
+  color: $font-color-dark;
+  font-family: HeaderText-Regular;
+  font-weight: bold;
+  font-size: $font-size-header;
+}
+
+@mixin text {
+  color: $font-color-dark;
+  font-family: ArticleText-Regular;
+  font-size: $font-size-text;
+}
+
+@mixin text-reverse {
+  color: $font-color-white;
+  font-family: ArticleText-Regular;
+  font-size: $font-size-text;
+}
+
+@mixin photo($position) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  @if($position == right){
+    img {
+      -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+      -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+      box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    }
+  }@else {
+    img {
+      -webkit-box-shadow: -8px 8px 24px 0px rgba(66, 68, 90, 1);
+      -moz-box-shadow: -8px 8px 24px 0px rgba(66, 68, 90, 1);
+      box-shadow: -8px 8px 24px 0px rgba(66, 68, 90, 1);
+    }
+  }
+}
+
+@mixin list {
+  list-style: none;
+
+  li, li + li {
+    margin-top: 0;
+    color: $font-color-white;
+    @include text-reverse;
+  }
+}
 
 
 // END HOME PAGE //

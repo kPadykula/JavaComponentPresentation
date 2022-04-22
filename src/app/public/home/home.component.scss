@@ -1,30 +1,67 @@
 @import "src/sass/mixins";
 
-.firstRow {
-  min-height: 50vh;
-}
 
 .firstCol {
-  border-right: 0.5vw solid $line-bg-dark;
-  border-bottom: 0.5vw dashed $line-bg-dark;
-}
-
-.secondCol {
-
-}
-
-.secondRow {
-  min-height: 30vh;
+  border-right: $border-line-width solid $line-bg-dark;
+  border-bottom: $border-line-width dashed $line-bg-dark;
 }
 
 .thirdCol {
   border-left: 0.5vw solid $line-bg-dark;
 }
 
-.fourthCol {
-
+.thirdRow {
+  min-height: 30vh;
+  border-top: $border-line-width solid $line-bg-dark;
+  border-right: $border-line-width solid $line-bg-dark;
+  border-bottom: $border-line-width dashed $line-bg-dark;
 }
 
-.component_description {
-  @include home-page-component-desc;
+.fourthRow {
+  border-left: $border-line-width solid $line-bg-dark;
+}
+
+.endingRow {
+  min-height: 10vh;
+}
+
+.endingCol {
+  border-top: $border-line-width solid $line-bg-dark;
+  border-right: $border-line-width solid $line-bg-dark;
+}
+
+.endingDiv {
+  min-height: 5vh;
+}
+
+.arrowHolder {
+  position: relative;
+}
+
+.arrowHolder > mat-icon {
+  color: white;
+  position: absolute;
+  font-size: 5rem;
+  top: -32px;
+  right: 21px;
+}
+
+.component_description-left {
+  @include home-page-component-desc(left);
+}
+
+.component_description-right {
+  @include home-page-component-desc(right);
+}
+
+.image-right {
+  @include photo(right);
+}
+
+.image-left {
+  @include photo(left);
+}
+
+ul {
+  @include list;
 }

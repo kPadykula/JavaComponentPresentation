@@ -3,24 +3,73 @@
 <div class="main-container">
   <div class="row firstRow">
     <div class="col-7 firstCol">
-      <article class="component_description">
-        <h2 translate class="title">home.title</h2>
-        <section class="first_sec">
-          <p translate class="tekst">home.firstP</p>
-          <p translate class="tekst">home.secondP</p>
-        </section>
+      <article class="component_description-left">
+        <h2 translate class="title">home.first-row.title</h2>
+          <p translate class="text">home.first-row.firstP</p>
+          <p translate class="text">home.first-row.secondP</p>
       </article>
     </div>
     <div class="col-5 secondCol">
-
+        <div class="image-right">
+          <img class="img-fluid" src="/assets/images/clear_app.png" alt="{{ 'home.first-row.image.clear-app' | translate }}">
+        </div>
     </div>
   </div>
   <div class="row secondRow">
     <div class="col-5 thirdCol">
-
+        <div class="image-left">
+          <img class="img-fluid" src="/assets/images/list_app.png" alt="{{ 'home.second-row.image.list-app' | translate}}">
+        </div>
     </div>
     <div class="col-7 fourthCol">
-
+        <article class="component_description-left">
+          <h3 translate class="title-reverse">home.second-row.title</h3>
+            <p translate class="text-reverse">home.second-row.firstP</p>
+            <ul>
+              <li translate>home.second-row.list-item.kolo</li>
+              <li translate>home.second-row.list-item.trojkat</li>
+              <li translate>home.second-row.list-item.kwadrat</li>
+              <li translate>home.second-row.list-item.prostokat</li>
+            </ul>
+          <br>
+        </article>
+    </div>
+  </div>
+  <div class="row thirdRow">
+    <div class="col-7 fifthCol">
+      <article class="component_description-left">
+        <h3 translate class="title">home.thirdRow.title</h3>
+        <p translate class="text">home.thirdRow.firstP</p>
+        <p translate class="text">home.thirdRow.secondP</p>
+        <br>
+      </article>
+    </div>
+    <div class="col-5 sixthCol">
+      <div class="image-right">
+        <img class="img-fluid" src="/assets/images/triangle_app_1.png" alt="{{ 'home.thirdRow.image.triangle1' | translate}}">
+      </div>
+    </div>
+  </div>
+  <div class="row fourthRow">
+    <div class="col-5 seventhCol">
+      <div class="image-left">
+        <img class="img-fluid" src="/assets/images/triangle_app_3.png" alt="{{ 'home.fourthRow.image.triangle3' | translate }}">
+      </div>
+    </div>
+    <div class="col-7 eighthCol">
+      <article class="component_description-left">
+        <h3 translate class="title">home.fourthRow.title</h3>
+        <p translate class="text">home.fourthRow.firstP</p>
+        <br>
+      </article>
+    </div>
+  </div>
+  <div class="row endingRow">
+    <div class="col-5 endingCol"></div>
+  </div>
+  <div class="endingDiv">
+    <div class="row">
+      <div class="col-5 arrowHolder"><mat-icon>arrow_drop_down</mat-icon></div>
     </div>
   </div>
 </div>

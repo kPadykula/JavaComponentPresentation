@@ -1,8 +1,41 @@
 {
 	"home": {
-		"firstP": "Stworzyliśmy kalkulator, który oblicza pole oraz obwód dwu i trój wymiarowych figur",
-		"secondP": "Nasza aplikacja składa się z trzech osobnych komponentów.",
-		"title": "Kalkulator"
+		"first-row": {
+			"firstP": "Stworzyliśmy kalkulator, który oblicza pole oraz obwód dwu i trój wymiarowych figur",
+			"image": {
+				"clear-app": "Zdjęcie czystej aplikacji"
+			},
+			"secondP": "Nasza aplikacja składa się z trzech osobnych komponentów",
+			"title": "Kalkulator"
+		},
+		"fourthRow": {
+			"firstP": "Aplikacja wyświetla wartość obliczonego pola oraz obwodu wybranej figury geometrycznej",
+			"image": {
+				"triangle3": "Zdjęcie wyniku wprowadzanych danych"
+			},
+			"title": "Otrzymany wynik"
+		},
+		"second-row": {
+			"firstP": "W pierwszej wersji aplikacji mamy do wyboru 4 figury geometryczne",
+			"image": {
+				"list-app": "Zdjęcie aplikacji z rozsuniętą listą"
+			},
+			"list-item": {
+				"kolo": "Koło",
+				"kwadrat": "Kwadrat",
+				"prostokat": "Prostokąt",
+				"trojkat": "Trójkąt"
+			},
+			"title": "Funkcjonalności"
+		},
+		"thirdRow": {
+			"firstP": "Wprowadzanie danych odbywa się poprzez klawiaturę",
+			"image": {
+				"triangle1": "Zdjęcie wprowadzania H"
+			},
+			"secondP": "Po wprowadzeniu wszystkich danych i zatwierdzeniu przyciskiem 'Enter' ",
+			"title": "Wprowadzanie danych"
+		}
 	},
 	"nav": {
 		"component": {

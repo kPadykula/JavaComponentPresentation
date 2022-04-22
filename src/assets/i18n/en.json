@@ -1,8 +1,41 @@
 {
 	"home": {
-		"firstP": "We create application which calculate area and perimeter of two and three dimensional geometric shape.",
-		"secondP": "Our application consist of three independent components.",
-		"title": "Calculator"
+		"first-row": {
+			"firstP": "We create application which calculate area and perimeter of two and three dimensional geometric shape.",
+			"image": {
+				"clear-app": "Image of clear application"
+			},
+			"secondP": "Our application consist of three independent components.",
+			"title": "Calculator"
+		},
+		"fourthRow": {
+			"firstP": "Application display a value of calculated area and perimeter of chosen geometric figure.",
+			"image": {
+				"triangle3": "Image which presents result of calculation"
+			},
+			"title": "Result"
+		},
+		"second-row": {
+			"firstP": "In first version of application we have four geometric figure to choose.",
+			"image": {
+				"list-app": "Image of application with select list"
+			},
+			"list-item": {
+				"kolo": "Circle",
+				"kwadrat": "Square",
+				"prostokat": "Rectangle",
+				"trojkat": "Triangle"
+			},
+			"title": "Functionalities"
+		},
+		"thirdRow": {
+			"firstP": "Inputting values take place through keyboard",
+			"image": {
+				"triangle1": "Image of inputting H"
+			},
+			"secondP": "When all data is correct and we pressed the Enter button",
+			"title": "Data entry"
+		}
 	},
 	"nav": {
 		"component": {
