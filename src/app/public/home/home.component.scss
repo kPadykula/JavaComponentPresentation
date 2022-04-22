@@ -1,23 +1,27 @@
 @import "src/sass/mixins";
 
-.main-button {
-  @include main-button;
-}
-
-.main-button:active {
-  @include main-button-active;
-}
-
 .firstRow {
-  height: 400px;
+  min-height: 50vh;
 }
 
 .firstCol {
-  border: 1px solid black;
-
+  border-right: 0.5vw solid $line-bg-dark;
+  border-bottom: 0.5vw dashed $line-bg-dark;
 }
 
 .secondCol {
+
+}
+
+.secondRow {
+  min-height: 30vh;
+}
+
+.thirdCol {
+  border-left: 0.5vw solid $line-bg-dark;
+}
+
+.fourthCol {
 
 }
 

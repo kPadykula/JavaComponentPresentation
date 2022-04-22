@@ -1,16 +1,16 @@
 @import "variables";
 
-@mixin main-button {
+// Navigation
+
+@mixin language-button {
   color: $font-color-white;
-  background-color: $button-bg;
-  border-radius: 25px;
-  border-style: none;
-  font-size: 1.1rem;
-  padding: 1%;
-  width: 120px;
+  font-size: 0.7vw;
+  border: none;
+  height: fit-content;
+  width: fit-content;
 }
 
-@mixin main-button-active {
+@mixin click-Button {
   transform: scale(0.95);
   transition: 0.22s;
 }
@@ -19,6 +19,11 @@
   color: $font-color-white;
   display: flex;
   justify-content: flex-end;
+  .menu-icon {
+    font-size: 2vw;
+    width: fit-content;
+    height: fit-content;
+  }
 }
 
 @mixin main-navigation-dropdown {
@@ -29,15 +34,40 @@
 @mixin main-navigation-dropdown-item {
   color: $font-color-white;
 }
+// END NAVIGATION //
+
+@mixin main-button {
+  color: $font-color-white;
+  background-color: $button-bg;
+  border-radius: 25px;
+  border-style: none;
+  font-size: 1.1rem;
+  padding: 1%;
+  width: 120px;
+}
+
+// HOME PAGE //
 
 @mixin home-page-component-desc {
-  h2 {
+  * {
+    text-align: inherit;
+    margin-top: 5vh;
+  }
+  .title {
     color: $font-color-white;
     font-family: HeaderText-Regular;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: $font-size-header;
   }
 
-  p {
+  .tekst {
     color: $font-color-dark;
     font-family: ArticleText-Regular;
+    font-size: $font-size-text;
   }
 }
+
+
+
+// END HOME PAGE //

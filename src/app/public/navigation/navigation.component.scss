@@ -3,11 +3,6 @@
 nav {
   margin-top: 10px;
 }
-.menu-icon {
-  font-size: 3rem;
-  height: fit-content;
-  width: fit-content;
-}
 
 .navigation {
   @include main-navigation;
@@ -22,10 +17,9 @@ nav {
 }
 
 .language-button {
-  @include main-button;
-  width: 80px;
-  height: 50px;
+  @include language-button;
+
 }
-language-button:hover {
-  @include main-button-active;
+.language-button:active {
+  @include click-Button;
 }
