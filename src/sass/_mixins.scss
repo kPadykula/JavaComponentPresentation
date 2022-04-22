@@ -1,0 +1,32 @@
+@import "variables";
+
+@mixin main-button {
+  color: $font-color-white;
+  background-color: $button-bg;
+  border-radius: 25px;
+  border-style: none;
+  font-size: 1.1rem;
+  padding: 1%;
+  width: 120px;
+}
+
+@mixin main-button-active {
+  transform: scale(0.95);
+  transition: 0.22s;
+}
+
+@mixin main-navigation {
+  color: $font-color-white;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@mixin main-navigation-dropdown {
+  border: 1px solid $line-bg-white;
+  background-color: $line-bg-dark;
+}
+
+@mixin main-navigation-dropdown-item {
+  color: $font-color-white;
+}
+

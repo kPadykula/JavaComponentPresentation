@@ -6,6 +6,7 @@ import {NgModule} from "@angular/core";
 import { NavigationComponent } from './navigation/navigation.component';
 import {MatButtonModule} from "@angular/material/button";
 import {MatMenuModule} from "@angular/material/menu";
+import {MatIconModule} from "@angular/material/icon";
 
 @NgModule({
   declarations: [
@@ -16,12 +17,13 @@ import {MatMenuModule} from "@angular/material/menu";
     NavigationComponent
 
   ],
-  imports: [
-    CommonModule,
-    RouterModule,
-    PublicRoutingModule,
-    MatButtonModule,
-    MatMenuModule,
-  ]
+    imports: [
+        CommonModule,
+        RouterModule,
+        PublicRoutingModule,
+        MatButtonModule,
+        MatMenuModule,
+        MatIconModule,
+    ]
 })
 export class PublicModule { }

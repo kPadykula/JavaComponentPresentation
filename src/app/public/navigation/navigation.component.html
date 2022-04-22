@@ -1,16 +1,17 @@
 
-<nav>
-  <ul>
-    <li>
-      <button mat-button [routerLink]="['']">Home</button></li>
-    <li>
-      <button mat-button [matMenuTriggerFor]="components">Components</button>
-    </li>
-  </ul>
-  <mat-menu #components>
-    <button mat-menu-item [routerLink]="['components', 'keyboard']">Keyboard</button>
-    <button mat-menu-item [routerLink]="['components', 'display']">Display</button>
-    <button mat-menu-item [routerLink]="['components', 'logic']">Logic</button>
+<nav class="navigation">
+  <button mat-button [matMenuTriggerFor]="menu">
+    <mat-icon class="menu-icon">menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu" class="navigation-dropdown" xPosition="before">
+    <button mat-menu-item class="navigation-dropdown-item" [routerLink]="['']">Home</button>
+    <button mat-menu-item class="navigation-dropdown-item" [matMenuTriggerFor]="components">Components</button>
+  </mat-menu>
+
+  <mat-menu #components="matMenu" class="navigation-dropdown" xPosition="after">
+    <button mat-menu-item class="navigation-dropdown-item" [routerLink]="['components', 'logic']">Logic</button>
+    <button mat-menu-item class="navigation-dropdown-item" [routerLink]="['components', 'keyboard']">Keyboard</button>
+    <button mat-menu-item class="navigation-dropdown-item" [routerLink]="['components', 'display']">Display</button>
   </mat-menu>
 </nav>
 

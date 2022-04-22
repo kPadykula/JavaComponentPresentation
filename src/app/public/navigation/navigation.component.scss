@@ -1,7 +1,19 @@
-ul {
-  list-style: none;
+@import "src/sass/mixins";
+
+.menu-icon {
+  font-size: 3rem;
+  height: fit-content;
+  width: fit-content;
 }
 
-li {
-  float: left;
+.navigation {
+  @include main-navigation;
+}
+
+::ng-deep .navigation-dropdown {
+  @include main-navigation-dropdown;
+}
+
+.navigation-dropdown-item {
+  @include main-navigation-dropdown-item;
 }
