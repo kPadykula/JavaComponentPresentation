@@ -33,7 +33,8 @@
             "styles": [
               "src/sass/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "heroku-postbuild": "ng build --prod"
           },
           "configurations": {
             "production": {
