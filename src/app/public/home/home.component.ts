@@ -12,4 +12,11 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  goTop() {
+    window.scroll({
+      top:0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  }
 }

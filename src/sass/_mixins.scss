@@ -4,7 +4,6 @@
 
 @mixin language-button {
   color: $font-color-white;
-  font-size: 0.7vw;
   border: none;
   height: fit-content;
   width: fit-content;
@@ -20,7 +19,6 @@
   display: flex;
   justify-content: flex-end;
   .menu-icon {
-    font-size: 2vw;
     width: fit-content;
     height: fit-content;
   }
@@ -52,8 +50,10 @@
   * {
     @if($position == right) {
       text-align: right;
-    }@else {
+    }@elseif ($position == left){
       text-align: left;
+    }@else {
+      text-align: center;
     }
     //margin-top: 5vh;
   }
@@ -132,5 +132,14 @@
   }
 }
 
+@mixin list-reverse {
+  list-style: none;
+
+  li, li + li {
+    margin-top: 0;
+    color: $font-color-dark;
+    @include text;
+  }
+}
 
 // END HOME PAGE //

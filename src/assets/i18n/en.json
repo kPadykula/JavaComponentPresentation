@@ -28,6 +28,25 @@
 			},
 			"title": "Functionalities"
 		},
+		"secondVersion": {
+			"FourthRow": {
+				"firstP": "From second version these figure are available",
+				"list-item": {
+					"kula": "Ball",
+					"ostroslup": "Pyramid",
+					"prostopadloscian": "Cuboid",
+					"stozek": "Cone"
+				},
+				"title": "Second Version"
+			},
+			"ThirdRow": {
+				"firstP": "Now our calculator is manage to calculate area and value of three dimensional figure",
+				"title": "New Functionality"
+			},
+			"firstRow": {
+				"title": "Second Version"
+			}
+		},
 		"thirdRow": {
 			"firstP": "Inputting values take place through keyboard",
 			"image": {

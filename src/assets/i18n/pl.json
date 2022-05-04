@@ -28,6 +28,25 @@
 			},
 			"title": "Funkcjonalności"
 		},
+		"secondVersion": {
+			"FourthRow": {
+				"firstP": "Od wersji drugiej dostępne są również figury",
+				"list-item": {
+					"kula": "Kula",
+					"ostroslup": "Ostrosłup",
+					"prostopadloscian": "Prostopadłościan",
+					"stozek": "Stożek"
+				},
+				"title": "Nowe figury"
+			},
+			"ThirdRow": {
+				"firstP": "Teraz kalkulator może również obliczyć pole oraz objętość figur trójwymiarowych",
+				"title": "Nowe Funkcjonalności"
+			},
+			"firstRow": {
+				"title": "Wersja druga"
+			}
+		},
 		"thirdRow": {
 			"firstP": "Wprowadzanie danych odbywa się poprzez klawiaturę",
 			"image": {

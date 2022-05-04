@@ -46,6 +46,52 @@
   right: 21px;
 }
 
+.secondVersionSecondRow > .col-7 {
+  min-height: 10vh;
+  border-left: $border-line-width solid $line-bg-dark;
+  border-bottom: $border-line-width solid $line-bg-dark;
+}
+
+.secondVersionThirdRow > .col-7 {
+  border-bottom: $border-line-width dashed $line-bg-dark;
+}
+
+.secondVersionThirdRow > .col-5 {
+  border-right: $border-line-width solid $line-bg-dark;
+  border-bottom: $border-line-width dashed $line-bg-dark;
+}
+
+.secondVersionFourthRow > .col-5 {
+  border-left: $border-line-width solid $line-bg-dark;
+  border-bottom: $border-line-width solid $line-bg-dark;
+}
+
+.secondVersionFifthRow > .col-5 {
+  min-height: 20vh;
+  border-right: $border-line-width dashed $line-bg-dark;
+}
+
+.secondVersionEndingRow > .col-3 {
+  min-height: 10vh;
+  border-top: $border-line-width solid $line-bg-dark;
+  margin-left: -0.48vw;
+}
+
+.secondVersionEndingRow > .col-4 {
+  margin-top: -5vh;
+  margin-left: -5vw;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.GoUp:hover {
+  color: $font-color-dark !important;
+}
+
+.arrow-right {
+  font-size: 5rem;
+}
+
 .component_description-left {
   @include home-page-component-desc(left);
 }
@@ -54,6 +100,9 @@
   @include home-page-component-desc(right);
 }
 
+.component_description-center {
+  @include home-page-component-desc(center);
+}
 .image-right {
   @include photo(right);
 }
@@ -62,6 +111,10 @@
   @include photo(left);
 }
 
-ul {
+.fourthCol > article > ul {
   @include list;
+}
+
+.secondVersionFourthRow > .col-7 > article > ul {
+  @include list-reverse;
 }

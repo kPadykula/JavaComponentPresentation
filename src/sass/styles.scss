@@ -35,7 +35,7 @@ $JavaComponentPresentation-theme: mat.define-light-theme((
 
 @import 'variables';
 
-html, body { height: 100%; }
+html, body { height: 100%; scroll-behavior: smooth; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background: $container-bg !important; }
 
 /* Importing Bootstrap SCSS file. */
