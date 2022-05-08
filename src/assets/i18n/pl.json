@@ -1,8 +1,4 @@
 {
-	"component": {
-		"description": "",
-		"title": ""
-	},
 	"home": {
 		"first-row": {
 			"firstP": "Stworzyliśmy kalkulator, który oblicza pole oraz obwód dwu i trój wymiarowych figur",
@@ -58,6 +54,19 @@
 			},
 			"secondP": "Po wprowadzeniu wszystkich danych i zatwierdzeniu przyciskiem 'Enter' ",
 			"title": "Wprowadzanie danych"
+		}
+	},
+	"logic": {
+		"component": {
+			"description": "",
+			"title": "",
+			"versions": {
+				"firstVersion": {
+					"firstVersion": {
+						"title": ""
+					}
+				}
+			}
 		}
 	},
 	"nav": {

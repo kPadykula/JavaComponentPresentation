@@ -143,3 +143,34 @@
 }
 
 // END HOME PAGE //
+
+
+// START LOGIC PAGE //
+
+@mixin code-info-tab {
+  transition: 1s;
+  max-height: 52vh;
+
+  background-color: $font-color-white;
+  padding: 1vw;
+  border: 2px solid $line-bg-dark;
+}
+
+@mixin info-tab {
+  margin-top: 1vh;
+  font-family: ArticleText-Regular;
+
+  p {
+    font-size: $font-size-text-normal;
+  }
+
+  h4 {
+    font-size: $font-size-text-header;
+  }
+
+  ul {
+    font-size: $font-size-text-normal;
+  }
+}
+
+// END LOGIC PAGE //

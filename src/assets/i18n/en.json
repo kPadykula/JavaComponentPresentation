@@ -1,8 +1,4 @@
 {
-	"component": {
-		"description": "",
-		"title": ""
-	},
 	"home": {
 		"first-row": {
 			"firstP": "We create application which calculate area and perimeter of two and three dimensional geometric shape.",
@@ -58,6 +54,19 @@
 			},
 			"secondP": "When all data is correct and we pressed the Enter button",
 			"title": "Data entry"
+		}
+	},
+	"logic": {
+		"component": {
+			"description": "",
+			"title": "",
+			"versions": {
+				"firstVersion": {
+					"firstVersion": {
+						"title": ""
+					}
+				}
+			}
 		}
 	},
 	"nav": {

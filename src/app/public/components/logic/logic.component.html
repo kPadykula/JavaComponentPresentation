@@ -1,7 +1,19 @@
 <div class="row">
   <div class="col-6">
-    <mat-tab-group>
-      <mat-tab label="Info"> Code </mat-tab>
+    <h2 class="title">{{ 'logic.component.title' | translate }}</h2>
+    <p class="text">{{ 'logic.component.description' | translate }}</p>
+    <mat-tab-group color="black">
+      <mat-tab label="Info">
+        <article class="info-tab">
+          <h4>{{ 'logic.component.versions.firstVersion.firstParagraph.title' | translate }}</h4>
+          <p>{{ 'logic.component.versions.firstVersion.firstParagraph.description' | translate }}</p>
+          <ul>
+            <li>{{ 'logic.component.versions.firstVersion.firstParagraph.p.0' | translate}}</li>
+            <li>{{ 'logic.component.versions.firstVersion.firstParagraph.p.1' | translate}}</li>
+            <li>{{ 'logic.component.versions.firstVersion.firstParagraph.p.2' | translate}}</li>
+          </ul>
+        </article>
+      </mat-tab>
       <mat-tab label="Code">
         <pre>
           <code highlight="{{code}}"></code>
@@ -9,5 +21,9 @@
       </mat-tab>
     </mat-tab-group>
   </div>
-  <div class="col-7"></div>
+  <div class="col-6">
+    <div class="image-right">
+      <img class="img-fluid" src="/assets/images/logic/square.png" alt="{{ 'logic.component.versions.firstVersion.firstParagraph.alt' | translate }}">
+    </div>
+  </div>
 </div>

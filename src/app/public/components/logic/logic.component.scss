@@ -1,7 +1,33 @@
 @import "src/sass/_variables.scss";
+@import "src/sass/_mixins.scss";
 @import '~highlight.js/styles/atom-one-dark.css';
 
-col-6 {
-  background-color: #FFFFFF;
-  min-height: 30vh;
+.title {
+  @include title;
 }
+
+.title-reverse {
+  @include title-reverse;
+}
+
+.text {
+  @include text;
+}
+
+.text-reverse {
+  @include text-reverse;
+}
+
+mat-tab-group {
+  @include code-info-tab;
+}
+
+.info-tab {
+  @include info-tab;
+}
+
+.image-right {
+  @include photo(right);
+  max-width: 30vw;
+}
+
