@@ -1,6 +1,45 @@
 {
   "component": {
     "title": "Logika",
-    "description": ""
+    "description": "Komponentów odpowiedzialny logike programu.",
+    "versions": {
+      "firstVersion": {
+        "firstParagraph": {
+          "title": "Opis komponentu",
+          "description": "Komponent składa się z klas oraz interfejsów.",
+          "p": [
+            "Każda z klas jest odzwierciedleniem figury geometrycznej",
+            "Każda z klas posiada implementuje interfejs nakazujący zaimplementowanie metod takich jak obliczenie pola czy obwodu figury.",
+            "Każda z klas posiada prywatne pola, które są udostępnione w projekcie poprzez gettery oraz settery za pośrednictwem Lomboka."
+          ]
+        },
+        "secondParagraph": {
+          "title": "Circumference() oraz Area()",
+          "description": "Dwie metody, których zadaniem jest zwrócenie wartości obliczonego pola oraz obwodu danej figury.",
+          "img": "square.png"
+        },
+        "ThirdParagraph": {
+          "title": "IOperation",
+          "description": "Interfejs zawierające dwie powyższe metody.",
+          "img": "interf1.png"
+        }
+      },
+      "secondVersion": {
+        "firstParagraph": {
+          "title": "Rozszerzona wersja komponentu",
+          "description": "W drugiej wersji komponentu zaimplementowany został nowy interfejs pozwalający obliczyć objetość bryły a co za tym idzie zostały dodane również nowe figury."
+        },
+        "secondParagraph": {
+          "title": "Volume()",
+          "description": "Metoda zwracająca obliczoną objętość danej bryły",
+          "img": "cone.png"
+        },
+        "ThirdParagraph": {
+          "title": "IOperationThreeDimensional",
+          "description": "Interfejs odpowiedzialny za implementacje objętości dla brył",
+          "img": "interf2.png"
+        }
+      }
+    }
   }
 }
