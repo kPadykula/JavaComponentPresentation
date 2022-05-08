@@ -1,4 +1,8 @@
 {
+	"component": {
+		"description": "",
+		"title": ""
+	},
 	"home": {
 		"first-row": {
 			"firstP": "We create application which calculate area and perimeter of two and three dimensional geometric shape.",

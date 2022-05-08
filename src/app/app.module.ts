@@ -13,6 +13,8 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 
 import {TranslateMessageFormatCompiler} from 'ngx-translate-messageformat-compiler';
+import {HIGHLIGHT_OPTIONS, HighlightModule} from "ngx-highlightjs";
+import {HighlightPlusModule} from "ngx-highlightjs/plus";
 
 @NgModule({
   declarations: [
@@ -26,6 +28,7 @@ import {TranslateMessageFormatCompiler} from 'ngx-translate-messageformat-compil
     PublicModule,
     NgbModule,
     HttpClientModule,
+    HighlightModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -38,7 +41,17 @@ import {TranslateMessageFormatCompiler} from 'ngx-translate-messageformat-compil
       }
     })
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HIGHLIGHT_OPTIONS,
+      useValue: {
+        coreLibraryLoader: () => import('highlight.js/lib/core'),
+        languages: {
+          java: () => import('highlight.js/lib/languages/java.js'),
+        }
+      }
+    }
+  ],
   bootstrap: [
     AppComponent
   ]

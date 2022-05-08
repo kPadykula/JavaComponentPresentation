@@ -1,4 +1,8 @@
 {
+	"component": {
+		"description": "",
+		"title": ""
+	},
 	"home": {
 		"first-row": {
 			"firstP": "Stworzyliśmy kalkulator, który oblicza pole oraz obwód dwu i trój wymiarowych figur",

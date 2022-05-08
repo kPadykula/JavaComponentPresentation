@@ -1,7 +1,7 @@
 {
   "component": {
     "title": "Logika",
-    "description": "Komponentów odpowiedzialny logike programu.",
+    "description": "Komponentów odpowiedzialny za logike programu.",
     "versions": {
       "firstVersion": {
         "firstParagraph": {
