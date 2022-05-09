@@ -68,11 +68,11 @@ mat-accordion > mat-expansion-panel > mat-expansion-panel-header {
 
 mat-panel-title {
   @include title-reverse;
-  font-size: 3.6vw;
 }
 
 mat-panel-description {
   @include text;
+  font-size: $font-size-text-normal;
 }
 
 .descriptionTest {
