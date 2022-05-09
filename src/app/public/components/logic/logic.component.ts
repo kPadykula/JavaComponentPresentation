@@ -118,6 +118,13 @@ export class LogicComponent implements OnInit {
     "    }\n" +
     "}\n"
 
+    codeInf2 = 'public interface IOperationThreeDimensional extends IOperation {\n' +
+    '    /**\n' +
+    '     * Objętość\n' +
+    '     */\n' +
+    '    double Volume();\n' +
+    '}\n'
+
   firstPanelOpenState = false;
   secondPanelOpenState = false;
   thirdPanelOpenState = false;
