@@ -41,6 +41,26 @@
             "img": "interf2.png"
           }
         }
+      },
+      "tests" : {
+        "firstTest": {
+          "title": "Obliczanie pola figury",
+          "description": "Został stworzony obiekt kwadratu o dlugiści boków 5cm. Po czym uruchomiona została metoda Area()",
+          "expectations": "Metoda powinna zwrócić wartość obliczonego pola kwadratu, która w zadanym teście wynosi 25cm2",
+          "result": "Wartość zwrócona przez program zgadza się z tą zadaną. Pole kwadratu wynosi 25cm2"
+        },
+        "secondTest": {
+          "title": "Obliczenie obwodu figury",
+          "description": "Został stworzony obiekt prostokąta o długościach boków 3cm i 5cm. Po czym uruchomiona została metoda Circumference()",
+          "expectations": "Metoda powinna zwrócić obliczoną wartość obwodu prostokąta, która w zadanym teście wynosi 16cm",
+          "result": "Wartość zwrócona przez program zgadza się z tą zadaną. Obwód prostokąta wynosi 16cm"
+        },
+        "thirdTest": {
+          "title": "Obliczenie objętości bryły",
+          "description": "Został stworzony obiekt stożka o wysokości 6cm i promieniu 2cm. Po czym uruchomiona została metoda Volume()",
+          "expectations": "Metoda powinna zwórić obliczoną wartość obwodu stożka, która w zadanym teście w przybliżeniu wynosi 25.13cm3",
+          "result": "Wartość zwrócona przez program zgadza się z tą zadaną. Objętość stożka wynosi 25.13cm3"
+        }
       }
     }
   }

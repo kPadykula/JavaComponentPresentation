@@ -2,6 +2,10 @@
 @import "src/sass/_mixins.scss";
 @import '~highlight.js/styles/atom-one-dark.css';
 
+* {
+  margin-top: 1vh;
+}
+
 .title {
   @include title;
 }
@@ -28,6 +32,8 @@ mat-tab-group {
 
 .image-right {
   @include photo(right);
+  margin-top: 0.5vh;
+  margin-left: 3vw;
   max-width: 30vw;
 }
 
