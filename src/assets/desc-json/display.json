@@ -1,0 +1,101 @@
+{
+  "logic": {
+    "component": {
+      "title": "Wyświetlacz",
+      "description": "Jeden z komponentów, pełniący role wyświetlacza.",
+      "versions": {
+        "firstVersion": {
+          "firstParagraph": {
+            "title": "Opis komponentu",
+            "description": "Główne założenia to wyświetlanie wyników działania programu i do wyświetlania szeroko pojętych 'komunikatów' w trakcie jego działania.",
+            "p": [
+              "Wyświetlanie wyników działania programu",
+              "Możliwość ustawienia dowolnego tekstu w dowolnym czasie na wyświetlaczu",
+              "Rozsuwane menu z wyborem kształu"
+            ]
+          },
+          "secondParagraph": {
+            "title": "setComputeButtonListener()",
+            "description": "wstrzykiwanie zależoności Listener do monitorowania zachowania listy wyboru.",
+            "img": ""
+          },
+          "ThirdParagraph": {
+            "title": "setText()",
+            "description": "ustawienie  tekstu który ma zostać wyświetlony w oknie wyświetlania.",
+            "img": ""
+          },
+          "FourthParagraph": {
+            "title": "getChosenShape()",
+            "description": "Pobranie wartości wybranego kształtu jako literału",
+            "img":""
+          }
+        },
+        "secondVersion": {
+          "firstParagraph": {
+            "title": "Rozszerzona wersja komponentu",
+            "description": "W drugiej wersji komponentu zaimplementowany został nowy interfejs pozwalający na dynamiczne przełączanie się pomiędzy kształtami 2D i 3D oraz poprawiona dostępność na rzecz customizacji"
+          },
+          "secondParagraph": {
+            "title": "Get() i set()",
+            "description": "Poprawiona dostępność do pól klasy",
+            "img": ""
+          },
+          "ThirdParagraph": {
+            "title": "choseFigureType",
+            "description": "Umożliwienie wyboru rodzaju figur poprzez pojawienie się przycisków wyboru rodzaju figur, które w zależności od aktualnie wybranego rozdaju zmieniają kolor i model zawrtości listy rozsówanej dostępnych kształtów",
+            "img": ""
+          }
+        }
+      },
+      "tests" : {
+        "firstTest": {
+          "title": "Sprawdzenie poprawności osadzenia komponentu w panelu graficznym",
+          "description": [
+            "Wywołaj konstruktotr komponentu",
+            "Dodaj obiekt do istniejącego menadżera rozkładu Swing",
+            "Sprawdź poprawność wyświetlania komponentu"
+          ],
+          "expectations": "Wyświetla się okno z wyświetlaczem i \"dropdown\" list z dostępnymi kształtami do wyboru",
+          "result": "Manipulacja komponentem nie powoduje nie oczekiwanego zatrzymania aplikacji"
+        },
+        "secondTest": {
+          "title": "Test wstrzykiwania zależności poprzez setter dla listenera",
+          "description": [
+            "Utwórz obiekt komponentu poprzez konstrukot",
+            "Dodaj go do aktualnego menadżera rozkładu Swing",
+            "Ustaw dowolny ActionListener poprzes metode modułu",
+            "Uruchom aplikacje Zaobserwuj działanie podczas maniuplacji komponentem i zweryfkiuj je"
+          ],
+          "expectations": "Komponent wykazuje poprawne zachowanie podczas maniuplacji",
+          "result": "Komponent nie wykazuje żadnych nie oczekiwanych zachowań"
+        },
+        "thirdTest": {
+          "title": "Test poprawności osadzenia w menedżerze rozkładu przycisków wyboru",
+          "description": [
+            "Utwórz obiekt komponentu poprzez konstrukot",
+            "Dodaj go do aktualnego menadżera rozkładu Swing",
+            "Uruchom aplikacje",
+            "Zaobserwuj czy dostępne są przyciski wyobru rodzaju figur",
+            "Zaobserwuj czy ich kolory są różne"
+          ],
+          "expectations": "Komponent nie wykazuje żadnych nie oczekiwanych zachowań",
+          "result": "Komponent jest poprawnie, widocznie, w pełni osadzony w menedżerze rozkładu Swing"
+        },
+        "fourthTest": {
+          "title": "Test funkcjonalny przycisków wyboru rodzaju figur",
+          "description": [
+            "Utwórz obiekt komponentu poprzez konstrukot",
+            "Dodaj go do aktualnego menadżera rozkładu Swing",
+            "Uruchom aplikacje",
+            "Zaobserwuj czy dostępne są przyciski wyobru rodzaju figur",
+            "Wciśning przycisk szary",
+            "Zaobserwuj czy przycisk zmienił kolor na zielony a poprzedni na szary",
+            "Zaobserwuj czy w rozsówanej liście dostępne figury odpowiadają wybranemu rodzajowi"
+          ],
+          "expectations": "Wszystkie obserwacje przechodzą pomyślnie",
+          "result": "Przyciski wyobru zachowują sie poprawniem, zgodnie z zaleceniami obserwacji"
+        }
+      }
+    }
+  }
+}
