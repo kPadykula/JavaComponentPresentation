@@ -9,6 +9,11 @@ import {TranslateModule} from "@ngx-translate/core";
 import {MatTabsModule} from "@angular/material/tabs";
 import {HighlightModule} from "ngx-highlightjs";
 import {HighlightPlusModule} from "ngx-highlightjs/plus";
+import {MatIconModule} from "@angular/material/icon";
+import {MatButtonToggleModule} from "@angular/material/button-toggle";
+import {CommonModule} from "@angular/common";
+import {MatExpansionModule} from "@angular/material/expansion";
+import {MatDividerModule} from "@angular/material/divider";
 
 @NgModule({
   declarations: [
@@ -25,6 +30,11 @@ import {HighlightPlusModule} from "ngx-highlightjs/plus";
     MatTabsModule,
     HighlightModule,
     HighlightPlusModule,
+    MatIconModule,
+    MatButtonToggleModule,
+    CommonModule,
+    MatExpansionModule,
+    MatDividerModule,
   ],
 })
 export class ComponentsModule { }

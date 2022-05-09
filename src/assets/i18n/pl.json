@@ -59,10 +59,61 @@
 	"logic": {
 		"component": {
 			"description": "",
+			"firstSpace": "Wersja druga",
+			"secondSpace": "Testy",
+			"tests": {
+				"firstTest": {
+					"description": "",
+					"expectations": "",
+					"result": "",
+					"title": ""
+				},
+				"kroki": "Kroki",
+				"oczekiwania": "Oczekiwania",
+				"rezultat": "Rezultat",
+				"secondTest": {
+					"title": ""
+				},
+				"thirdTest": {
+					"title": ""
+				}
+			},
 			"title": "",
 			"versions": {
 				"firstVersion": {
-					"firstVersion": {
+					"ThirdParagraph": {
+						"description": "",
+						"title": ""
+					},
+					"firstParagraph": {
+						"alt": "",
+						"description": "",
+						"p": {
+							"0": "",
+							"1": "",
+							"2": ""
+						},
+						"title": ""
+					},
+					"secondParagraph": {
+						"alt": "",
+						"description": "",
+						"title": ""
+					}
+				},
+				"secondVersion": {
+					"ThirdParagraph": {
+						"alt": "",
+						"description": "",
+						"title": ""
+					},
+					"firstParagraph": {
+						"description": "",
+						"title": ""
+					},
+					"secondParagraph": {
+						"alt": "",
+						"description": "",
 						"title": ""
 					}
 				}

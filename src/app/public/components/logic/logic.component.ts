@@ -10,7 +10,7 @@ export class LogicComponent implements OnInit {
 
   @Output() jsonLogic = require("src/assets/desc-json/logic.json");
 
-  code = "import lombok.Getter;\n" +
+  codeSquare = "import lombok.Getter;\n" +
     "import lombok.Setter;\n" +
     "\n" +
     "public class Square implements IOperation {\n" +
@@ -53,11 +53,93 @@ export class LogicComponent implements OnInit {
     "    }\n" +
     "}\n";
 
+  codeInf1 = "public interface IOperation {\n" +
+    "    /**\n" +
+    "     * Obwód\n" +
+    "     */\n" +
+    "    double Circumference();\n" +
+    "\n" +
+    "    /**\n" +
+    "     * Pole\n" +
+    "     */\n" +
+    "    double Area();\n" +
+    "}\n"
+
+  codeCone = "import lombok.Getter;\n" +
+    "import lombok.Setter;\n" +
+    "\n" +
+    "public class Cone implements IOperationThreeDimensional {\n" +
+    "\n" +
+    "    private static final double PI = 3.14159;\n" +
+    "\n" +
+    "    @Setter\n" +
+    "    @Getter\n" +
+    "    private double r, h, l, Pb, Pp;\n" +
+    "\n" +
+    "    public Cone(double r, double h) {\n" +
+    "        this.r = r;\n" +
+    "        this.h = h;\n" +
+    "        this.l = Math.sqrt( Math.pow(h, 2) + Math.pow(r, 2));\n" +
+    "        this.Pp = PI * Math.pow(r, 2);\n" +
+    "        this.Pb = PI * this.r * l;\n" +
+    "    }\n" +
+    "\n" +
+    "    /**\n" +
+    "     * Method is eliminate in this class\n" +
+    "     * @return return 0.\n" +
+    "     */\n" +
+    "    @Override\n" +
+    "    public double Circumference() {\n" +
+    "        return 0;\n" +
+    "    }\n" +
+    "\n" +
+    "    /**\n" +
+    "     * Method which calculate area of Cone\n" +
+    "     * @return value of area if (r & h) > 0 otherwise return 0.\n" +
+    "     */\n" +
+    "    @Override\n" +
+    "    public double Area() {\n" +
+    "        if (r > 0 && h > 0){\n" +
+    "            return Pp + Pb;\n" +
+    "        } else\n" +
+    "            return 0;\n" +
+    "    }\n" +
+    "\n" +
+    "    /**\n" +
+    "     * Method which calculate volume of Cone\n" +
+    "     * @return value of volume if (r & h) > 0 otherwise return 0.\n" +
+    "     */\n" +
+    "    @Override\n" +
+    "    public double Volume() {\n" +
+    "        if (r > 0 && h > 0){\n" +
+    "            return (Pp * h) / 3;\n" +
+    "        } else\n" +
+    "            return 0;\n" +
+    "    }\n" +
+    "}\n"
+
+  buttonValue = 1;
+  firstPanelOpenState = false;
+  secondPanelOpenState = false;
+  thirdPanelOpenState = false;
+
   constructor(private translate: TranslateService) {
     this.translate.setTranslation('pl', this.jsonLogic, true);
   }
 
   ngOnInit(): void {
 
+  }
+
+  changeTest(value: number) {
+    this.buttonValue = value;
+  }
+
+  goTop() {
+    window.scroll({
+      top:0,
+      left: 0,
+      behavior: 'smooth'
+    });
   }
 }
