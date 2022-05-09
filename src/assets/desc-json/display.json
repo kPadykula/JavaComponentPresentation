@@ -1,5 +1,5 @@
 {
-  "logic": {
+  "display": {
     "component": {
       "title": "Wyświetlacz",
       "description": "Jeden z komponentów, pełniący role wyświetlacza.",

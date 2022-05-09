@@ -72,9 +72,15 @@
 				"oczekiwania": "Oczekiwania",
 				"rezultat": "Rezultat",
 				"secondTest": {
+					"description": "",
+					"expectations": "",
+					"result": "",
 					"title": ""
 				},
 				"thirdTest": {
+					"description": "",
+					"expectations": "",
+					"result": "",
 					"title": ""
 				}
 			},
@@ -86,7 +92,7 @@
 						"title": ""
 					},
 					"firstParagraph": {
-						"alt": "",
+						"alt": "Zdjęcie klasy kwadratu",
 						"description": "",
 						"p": {
 							"0": "",
@@ -96,14 +102,14 @@
 						"title": ""
 					},
 					"secondParagraph": {
-						"alt": "",
+						"alt": "Zdjęcie pierwszego interfejsu",
 						"description": "",
 						"title": ""
 					}
 				},
 				"secondVersion": {
 					"ThirdParagraph": {
-						"alt": "",
+						"alt": "Zdjęcie drugiego interfejsu",
 						"description": "",
 						"title": ""
 					},
@@ -112,7 +118,7 @@
 						"title": ""
 					},
 					"secondParagraph": {
-						"alt": "",
+						"alt": "Zdjęcie klasy stożka",
 						"description": "",
 						"title": ""
 					}

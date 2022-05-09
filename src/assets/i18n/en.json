@@ -58,63 +58,69 @@
 	},
 	"logic": {
 		"component": {
-			"description": "",
-			"firstSpace": "",
-			"secondSpace": "",
+			"description": "One of components which is responsible for program logic.",
+			"firstSpace": "Second Version",
+			"secondSpace": "Tests",
 			"tests": {
 				"firstTest": {
-					"description": "",
-					"expectations": "",
-					"result": "",
-					"title": ""
+					"description": "Was created square object with 5cm sides length then method Area() was called.",
+					"expectations": "Method which was called should return calculated value of square area equals 25cm2",
+					"result": "Value which program returns is equal to the given value. Square area equals 25cm2",
+					"title": "Calculate figure area"
 				},
-				"kroki": "",
-				"oczekiwania": "",
-				"rezultat": "",
+				"kroki": "Steps",
+				"oczekiwania": "Expectations",
+				"rezultat": "Result",
 				"secondTest": {
-					"title": ""
+					"description": "Was created rectangle object with 3cm and 5cm sides length then method Circumference() was called.",
+					"expectations": "Method which was called should return calculated value of rectangle circumference equals 16cm",
+					"result": "Value which program returns is equal to the given value. Rectangle circumference equals 16cm",
+					"title": "Calculate figure circumference"
 				},
 				"thirdTest": {
-					"title": ""
+					"description": "Was created cone object with 6cm height and 2cm radius then method Volume() was called.",
+					"expectations": "Method which was called should return calculated value of cone volume equals 25.13cm3",
+					"result": "Value which program returns is equal to the given value. Cone volume equals 25.13cm3",
+					"title": "Calculate cone volume"
 				}
 			},
-			"title": "",
+			"title": "Logic",
 			"versions": {
 				"firstVersion": {
 					"ThirdParagraph": {
-						"description": "",
-						"title": ""
+						"description": "Interface which contains above methods",
+						"title": "IOperation"
 					},
 					"firstParagraph": {
-						"alt": "",
-						"description": "",
+						"alt": "Square class photo",
+						"description": "Component consist classes and interfaces",
 						"p": {
-							"0": "",
-							"1": "",
-							"2": ""
+							"0": "Every class is reflection of geometric figures",
+							"1": "Every class implements interface which enjoin to implement methods to calculate area and circumference",
+							"2": "Every class have private values which are shared mediated by getters and setters from lombok"
 						},
-						"title": ""
+						"title": "Component description"
 					},
 					"secondParagraph": {
-						"alt": "",
-						"description": "",
-						"title": ""
+						"alt": "First interface photo",
+						"description": "Two methods which return value of area and circumference of figure",
+						"title": "Circumference() and Area()"
 					}
 				},
 				"secondVersion": {
 					"ThirdParagraph": {
-						"alt": "",
-						"description": "",
-						"title": ""
+						"alt": "Second interface photo",
+						"description": "Interface responsible for implementations method to calculate figure volume",
+						"title": "IOperationThreeDimensional"
 					},
 					"firstParagraph": {
-						"description": "",
-						"title": ""
+						"description": "In second version were added new figures and interface to calculate volume.",
+						"title": "Extended component version"
 					},
 					"secondParagraph": {
-						"alt": "",
-						"description": "",
-						"title": ""
+						"alt": "Cone class photo",
+						"description": "Method which return figure volume",
+						"title": "Volume()"
 					}
 				}
 			}
