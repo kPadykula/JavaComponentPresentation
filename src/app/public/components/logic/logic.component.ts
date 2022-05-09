@@ -118,7 +118,6 @@ export class LogicComponent implements OnInit {
     "    }\n" +
     "}\n"
 
-  buttonValue = 1;
   firstPanelOpenState = false;
   secondPanelOpenState = false;
   thirdPanelOpenState = false;
@@ -129,10 +128,6 @@ export class LogicComponent implements OnInit {
 
   ngOnInit(): void {
 
-  }
-
-  changeTest(value: number) {
-    this.buttonValue = value;
   }
 
   goTop() {

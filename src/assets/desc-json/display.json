@@ -61,9 +61,9 @@
         "secondTest": {
           "title": "Test wstrzykiwania zależności poprzez setter dla listenera",
           "description": [
-            "Utwórz obiekt komponentu poprzez konstrukot",
-            "Dodaj go do aktualnego menadżera rozkładu Swing",
-            "Ustaw dowolny ActionListener poprzes metode modułu",
+            "Utwórz obiekt komponentu poprzez konstruktor",
+            "Dodanie go do aktualnego menadżera rozkładu Swing",
+            "Ustaw dowolny ActionListener poprzez metode modułu",
             "Uruchom aplikacje Zaobserwuj działanie podczas maniuplacji komponentem i zweryfkiuj je"
           ],
           "expectations": "Komponent wykazuje poprawne zachowanie podczas maniuplacji",

@@ -1,1 +1,208 @@
-<p>display works!</p>
+<div class="row">
+  <div class="col-6">
+    <h2 class="title">{{ 'display.component.title' | translate }}</h2>
+  </div>
+  <div class="col-6"></div>
+</div>
+<div class="row">
+  <div class="col-6">
+    <div class="row">
+      <p class="text">{{ 'display.component.description' | translate }}</p>
+    </div>
+    <div class="row">
+      <mat-tab-group color="black">
+        <mat-tab label="Info">
+          <article class="info-tab">
+            <h4>{{ 'display.component.versions.firstVersion.firstParagraph.title' | translate }}</h4>
+            <p>{{ 'display.component.versions.firstVersion.firstParagraph.description' | translate }}</p>
+            <ul>
+              <li>{{ 'display.component.versions.firstVersion.firstParagraph.p.0' | translate}}</li>
+              <li>{{ 'display.component.versions.firstVersion.firstParagraph.p.1' | translate}}</li>
+              <li>{{ 'display.component.versions.firstVersion.firstParagraph.p.2' | translate}}</li>
+            </ul>
+          </article>
+        </mat-tab>
+        <mat-tab label="Code">
+        <pre>
+          <code highlight="{{ fulljavaCode }}"></code>
+        </pre>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="image-right">
+      <img class="img-fluid" src="/assets/images/display/displayMethod.png" alt="{{ 'display.component.versions.firstVersion.firstParagraph.alt' | translate }}">
+    </div>
+  </div>
+</div>
+<br>
+<mat-divider></mat-divider>
+<div class="row">
+  <div class="col-6">
+      <div class="image-left">
+        <img class="img-fluid" src="/assets/images/display/settext.png" alt="{{ 'display.component.versions.firstVersion.secondParagraph.alt' | translate }}">
+      </div>
+  </div>
+  <div class="col-6">
+    <mat-tab-group color="black">
+      <mat-tab label="Info">
+        <article class="info-tab">
+          <h4>{{ 'display.component.versions.firstVersion.secondParagraph.title' | translate }}</h4>
+          <p>{{ 'display.component.versions.firstVersion.secondParagraph.description' | translate }}</p>
+          <h4>{{ 'display.component.versions.firstVersion.ThirdParagraph.title' | translate }}</h4>
+          <p>{{ 'display.component.versions.firstVersion.ThirdParagraph.description' | translate }}</p>
+          <h4>{{ 'display.component.versions.firstVersion.FourthParagraph.title' | translate }}</h4>
+          <p>{{ 'display.component.versions.firstVersion.FourthParagraph.description' | translate }}</p>
+        </article>
+      </mat-tab>
+      <mat-tab label="Code">
+        <pre>
+          <code highlight="{{ settextCode }}"></code>
+        </pre>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+</div>
+<br>
+<mat-divider></mat-divider>
+<div class="row">
+  <h2 class="title" style="text-align: center">{{ 'logic.component.firstSpace' | translate }}</h2>
+</div>
+<br>
+<mat-divider></mat-divider>
+<div class="row">
+  <div class="col-8">
+    <h2 class="title">{{ 'display.component.versions.secondVersion.firstParagraph.title' | translate }}</h2>
+  </div>
+  <div class="col-6"></div>
+</div>
+<div class="row">
+  <div class="col-6">
+    <div class="row">
+      <p class="text">{{ 'display.component.versions.secondVersion.firstParagraph.description' | translate }}</p>
+    </div>
+    <div class="row">
+      <mat-tab-group color="black">
+        <mat-tab label="Info">
+          <article class="info-tab">
+            <h4>{{ 'display.component.versions.secondVersion.secondParagraph.title' | translate }}</h4>
+            <p>{{ 'display.component.versions.secondVersion.secondParagraph.description' | translate }}</p>
+            <h4>{{ 'display.component.versions.secondVersion.ThirdParagraph.title' | translate }}</h4>
+            <p>{{ 'display.component.versions.secondVersion.ThirdParagraph.description' | translate }}</p>
+          </article>
+        </mat-tab>
+        <mat-tab label="Code">
+        <pre>
+          <code highlight="{{ actionListener }}"></code>
+        </pre>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="image-right">
+      <img class="img-fluid" src="/assets/images/display/actionlistener.png" alt="{{ 'display.component.versions.secondVersion.secondParagraph.alt' | translate }}">
+    </div>
+  </div>
+</div>
+<br>
+<mat-divider></mat-divider>
+<div class="row">
+  <h2 class="title" style="text-align: center">{{ 'logic.component.secondSpace' | translate}}</h2>
+</div>
+<br>
+<mat-divider></mat-divider>
+<div class="row">
+  <mat-accordion>
+    <mat-expansion-panel (opened)="firstPanelOpenState = true; secondPanelOpenState = false; thirdPanelOpenState = false;"
+                         (closed)="firstPanelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Test 1
+        </mat-panel-title>
+        <mat-panel-description class="text"> {{ 'display.component.tests.firstTest.title' | translate }} </mat-panel-description>
+      </mat-expansion-panel-header>
+      <span class="descriptionTest">
+        {{'logic.component.tests.kroki' | translate}}:
+        <ul>
+          <li>{{'display.component.tests.firstTest.description.0' | translate}}</li>
+          <li>{{'display.component.tests.firstTest.description.1' | translate}}</li>
+          <li>{{'display.component.tests.firstTest.description.2' | translate}}</li>
+        </ul>
+      </span>
+      <p class="descriptionTest">
+        {{ 'logic.component.tests.oczekiwania' | translate}}:
+        {{ 'display.component.tests.firstTest.expectations' | translate }}
+      </p>
+      <p class="descriptionTest">
+        {{ 'logic.component.tests.rezultat' | translate}}:
+        {{ 'display.component.tests.firstTest.result' | translate }}
+      </p>
+    </mat-expansion-panel>
+    <mat-expansion-panel (opened)="secondPanelOpenState = true; firstPanelOpenState = false; thirdPanelOpenState = false;"
+                         (closed)="secondPanelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Test 2
+        </mat-panel-title>
+        <mat-panel-description> {{ 'display.component.tests.secondTest.title' | translate }} </mat-panel-description>
+      </mat-expansion-panel-header>
+      <span class="descriptionTest">
+        {{'logic.component.tests.kroki' | translate}}:
+        <ul>
+          <li>{{'display.component.tests.secondTest.description.0' | translate}}</li>
+          <li>{{'display.component.tests.secondTest.description.1' | translate}}</li>
+          <li>{{'display.component.tests.secondTest.description.2' | translate}}</li>
+          <li>{{'display.component.tests.secondTest.description.3' | translate}}</li>
+        </ul>
+      </span>
+      <p class="descriptionTest">
+        {{ 'logic.component.tests.oczekiwania' | translate}}:
+        {{ 'display.component.tests.secondTest.expectations' | translate }}
+      </p>
+      <p class="descriptionTest">
+        {{ 'logic.component.tests.rezultat' | translate}}:
+        {{ 'display.component.tests.secondTest.result' | translate }}
+      </p>
+    </mat-expansion-panel>
+    <mat-expansion-panel (opened)="thirdPanelOpenState = true; secondPanelOpenState = false; firstPanelOpenState = false;"
+                         (closed)="thirdPanelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Test 3
+        </mat-panel-title>
+        <mat-panel-description> {{ 'display.component.tests.thirdTest.title' | translate }} </mat-panel-description>
+      </mat-expansion-panel-header>
+      <span class="descriptionTest">
+        {{'logic.component.tests.kroki' | translate}}:
+        <ul>
+          <li>{{'display.component.tests.thirdTest.description.0' | translate}}</li>
+          <li>{{'display.component.tests.thirdTest.description.1' | translate}}</li>
+          <li>{{'display.component.tests.thirdTest.description.2' | translate}}</li>
+          <li>{{'display.component.tests.thirdTest.description.3' | translate}}</li>
+          <li>{{'display.component.tests.thirdTest.description.4' | translate}}</li>
+        </ul>
+      </span>
+      <p class="descriptionTest">
+        {{ 'logic.component.tests.oczekiwania' | translate}}:
+        {{ 'display.component.tests.thirdTest.expectations' | translate }}
+      </p>
+      <p class="descriptionTest">
+        {{ 'logic.component.tests.rezultat' | translate}}:
+        {{ 'display.component.tests.thirdTest.result' | translate }}
+      </p>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>
+
+<div class="row">
+  <div class="col-6"></div>
+  <div class="col-6" style="text-align: end">
+    <h3 class="title GoUp" (click)="goTop()">
+      Go UP &emsp;
+      <mat-icon class="arrow-right">arrow_upward</mat-icon>
+    </h3>
+  </div>
+
+</div>

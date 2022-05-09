@@ -1,4 +1,87 @@
 {
+	"display": {
+		"component": {
+			"description": "",
+			"tests": {
+				"firstTest": {
+					"description": {
+						"0": "",
+						"1": "",
+						"2": ""
+					},
+					"expectations": "",
+					"result": "",
+					"title": ""
+				},
+				"secondTest": {
+					"description": {
+						"0": "",
+						"1": "",
+						"2": "",
+						"3": ""
+					},
+					"expectations": "",
+					"result": "",
+					"title": ""
+				},
+				"thirdTest": {
+					"description": {
+						"0": "",
+						"1": "",
+						"2": "",
+						"3": "",
+						"4": ""
+					},
+					"expectations": "",
+					"result": "",
+					"title": ""
+				}
+			},
+			"title": "",
+			"versions": {
+				"firstVersion": {
+					"FourthParagraph": {
+						"description": "",
+						"title": ""
+					},
+					"ThirdParagraph": {
+						"description": "",
+						"title": ""
+					},
+					"firstParagraph": {
+						"alt": "",
+						"description": "",
+						"p": {
+							"0": "",
+							"1": "",
+							"2": ""
+						},
+						"title": ""
+					},
+					"secondParagraph": {
+						"alt": "",
+						"description": "",
+						"title": ""
+					}
+				},
+				"secondVersion": {
+					"ThirdParagraph": {
+						"description": "",
+						"title": ""
+					},
+					"firstParagraph": {
+						"description": "",
+						"title": ""
+					},
+					"secondParagraph": {
+						"alt": "",
+						"description": "",
+						"title": ""
+					}
+				}
+			}
+		}
+	},
 	"home": {
 		"first-row": {
 			"firstP": "Stworzyliśmy kalkulator, który oblicza pole oraz obwód dwu i trój wymiarowych figur",

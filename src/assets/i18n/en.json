@@ -1,4 +1,87 @@
 {
+	"display": {
+		"component": {
+			"description": "One of the components which is responsible for displaying",
+			"tests": {
+				"firstTest": {
+					"description": {
+						"0": "Invoke constructor",
+						"1": "Add object to current layout manager",
+						"2": "Check on the correctness of elemnts displayed"
+					},
+					"expectations": "Windows with simple display and select dropdown list is displayed",
+					"result": "Component manipulation doesn't result in unexpected failure or crash",
+					"title": "The correctness of settlement in Swing layout, check"
+				},
+				"secondTest": {
+					"description": {
+						"0": "Create object by constructor",
+						"1": "Adding him to existing layout manager",
+						"2": "Set any ActionListener by module method",
+						"3": "After launch application observe activity while manipulating component"
+					},
+					"expectations": "Components doesn't seem to expose any unexpected behaviours",
+					"result": "Component is displayed properly",
+					"title": "Dependency injection by setter for listener"
+				},
+				"thirdTest": {
+					"description": {
+						"0": "Invoke constructor",
+						"1": "Add it to current display manager",
+						"2": "Run an app",
+						"3": "Check if buttons are available",
+						"4": "Check if their color differs"
+					},
+          "expectations": "Components doesn't seem to expose any unexpected behaviours",
+          "result": "Component is displayed properly",
+          "title": "Testing the display of select buttons correctness"
+        }
+			},
+			"title": "Display",
+			"versions": {
+				"firstVersion": {
+					"FourthParagraph": {
+						"description": "Getting chosen shape as String",
+						"title": "getChosenShape()"
+					},
+					"ThirdParagraph": {
+						"description": "Set text to be displayed",
+						"title": "setText()"
+					},
+					"firstParagraph": {
+						"alt": "Constructor of display photo",
+						"description": "Main assumptions are displaying result of operations and messages",
+						"p": {
+							"0": "Displaying results of operations\"",
+							"1": "Capability of setting any text at any time on the display",
+							"2": "Dropdown menu with allowed figures to select"
+						},
+						"title": "Component description"
+					},
+					"secondParagraph": {
+						"alt": "some methods photo",
+						"description": "Dependency injection through setter to allow free manipulation of behavior",
+						"title": "setComputeButtonListener()"
+					}
+				},
+				"secondVersion": {
+					"ThirdParagraph": {
+						"description": "Allow to change currently chosen dimension. Highlights with green the current one",
+						"title": "choseFigureType"
+					},
+					"firstParagraph": {
+						"description": "In the second version new interface were implemented which allows for switching between 2D and 3D figures",
+						"title": "Extended version of component"
+					},
+					"secondParagraph": {
+						"alt": "actionlistener photo",
+						"description": "Improved object properties accessibility",
+						"title": "Get() i set()"
+					}
+				}
+			}
+		}
+	},
 	"home": {
 		"first-row": {
 			"firstP": "We create application which calculate area and perimeter of two and three dimensional geometric shape.",
