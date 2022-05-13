@@ -32,10 +32,10 @@
 						"3": "Check if buttons are available",
 						"4": "Check if their color differs"
 					},
-          "expectations": "Components doesn't seem to expose any unexpected behaviours",
-          "result": "Component is displayed properly",
-          "title": "Testing the display of select buttons correctness"
-        }
+					"expectations": "Components doesn't seem to expose any unexpected behaviours",
+					"result": "Component is displayed properly",
+					"title": "Testing the display of select buttons correctness"
+				}
 			},
 			"title": "Display",
 			"versions": {
@@ -137,6 +137,66 @@
 			},
 			"secondP": "When all data is correct and we pressed the Enter button",
 			"title": "Data entry"
+		}
+	},
+	"keyboard": {
+		"component": {
+			"description": "One of components responsible for entering value from keyboard",
+			"tests": {
+				"firstTest": {
+					"description": "Test to confirm right value input",
+					"expectations": "Method should return entered value on console",
+					"result": "Value presented on console is equal to entered value",
+					"title": "Input value"
+				},
+				"secondTest": {
+					"description": "Test to confirm right working reset button",
+					"expectations": "Method should set value on 0",
+					"result": "Set value is equal to 0",
+					"title": "Reset value"
+				},
+				"thirdTest": {
+					"description": "Test to confirm right working backspace button",
+					"expectations": "Method should take value back",
+					"result": "Returned value is equal to value before",
+					"title": "Backspace value"
+				}
+			},
+			"title": "Keyboard",
+			"versions": {
+				"firstVersion": {
+					"firstParagraph": {
+						"alt": "main class of keyboard",
+						"description": "Component consist of panel which contains keyboard buttons",
+						"p": {
+							"0": "Buttons from 0 to 9 serve to input value",
+							"1": "Enter button confirm entered value"
+						},
+						"title": "Component description"
+					},
+					"secondParagraph": {
+						"alt": "addToValue and ResetValue methods photo",
+						"description": "Methods serve to sum and reset entered value",
+						"title": "AddToValue(), ValueReset()"
+					}
+				},
+				"secondVersion": {
+					"ThirdParagraph": {
+						"alt": "set background color photo",
+						"description": "Method give us to set background color",
+						"title": "setBackgroundColor(Color cl)"
+					},
+					"firstParagraph": {
+						"description": "In second version were implemented method to take value back and to set background color",
+						"title": "Extended component version"
+					},
+					"secondParagraph": {
+						"alt": "backspace method photo",
+						"description": "Method take value back from before",
+						"title": "BackSpaceMethod()"
+					}
+				}
+			}
 		}
 	},
 	"logic": {

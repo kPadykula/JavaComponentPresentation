@@ -1,0 +1,81 @@
+@import "src/sass/_variables.scss";
+@import "src/sass/_mixins.scss";
+@import '~highlight.js/styles/atom-one-dark.css';
+
+* {
+  margin-top: 1vh;
+}
+
+.title {
+  @include title;
+}
+
+.title-reverse {
+  @include title-reverse;
+}
+
+.text {
+  @include text;
+}
+
+.text-reverse {
+  @include text-reverse;
+}
+
+mat-tab-group {
+  @include code-info-tab;
+}
+
+.info-tab {
+  @include info-tab;
+}
+
+.image-right {
+  @include photo(right);
+  margin-top: 0.5vh;
+  margin-left: 3vw;
+  min-width: 30vw;
+  max-width: 30vw;
+}
+
+.image-left {
+  @include photo(left);
+  margin-top: 0.5vh;
+  margin-right: 3vw;
+  min-width: 30vw;
+  max-width: 30vw;
+}
+
+.arrow-right {
+  font-size: 5rem;
+}
+
+.GoUp {
+  cursor: pointer;
+  transition: 0.71s;
+}
+.GoUp:hover {
+  color: $font-color-dark !important;
+}
+
+article > h4 {
+  text-decoration: underline;
+}
+
+mat-accordion > mat-expansion-panel > mat-expansion-panel-header {
+  min-height: 10vh !important;
+}
+
+mat-panel-title {
+  @include title-reverse;
+}
+
+mat-panel-description {
+  @include text;
+}
+
+.descriptionTest {
+  @include text;
+  line-height: 1;
+  font-size: 1.2vw;
+}

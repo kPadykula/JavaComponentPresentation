@@ -139,6 +139,66 @@
 			"title": "Wprowadzanie danych"
 		}
 	},
+	"keyboard": {
+		"component": {
+			"description": "",
+			"tests": {
+				"firstTest": {
+					"description": "",
+					"expectations": "",
+					"result": "",
+					"title": ""
+				},
+				"secondTest": {
+					"description": "",
+					"expectations": "",
+					"result": "",
+					"title": ""
+				},
+				"thirdTest": {
+					"description": "",
+					"expectations": "",
+					"result": "",
+					"title": ""
+				}
+			},
+			"title": "",
+			"versions": {
+				"firstVersion": {
+					"firstParagraph": {
+						"alt": "",
+						"description": "",
+						"p": {
+							"0": "",
+							"1": ""
+						},
+						"title": ""
+					},
+					"secondParagraph": {
+						"alt": "",
+						"description": "",
+						"title": ""
+					}
+				},
+				"secondVersion": {
+					"ThirdParagraph": {
+						"alt": "",
+						"description": "",
+						"title": ""
+					},
+					"firstParagraph": {
+						"description": "",
+						"title": ""
+					},
+					"secondParagraph": {
+						"alt": "",
+						"description": "",
+						"title": ""
+					}
+				}
+			}
+		}
+	},
 	"logic": {
 		"component": {
 			"description": "",

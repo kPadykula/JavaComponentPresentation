@@ -1,0 +1,61 @@
+{
+  "keyboard": {
+    "component": {
+      "title": "Klawiatura",
+      "description": "Jeden z komponentów, odpowiedzialny za wprowadzanie wartości z panelu klawiatury",
+      "versions": {
+        "firstVersion": {
+          "firstParagraph": {
+            "title": "Opis komponentu",
+            "description": "Komponent składa się z panelu na którym rozmieszczone są przyciski klawiatury",
+            "p": [
+              "Przyciski od 0 do 9 służą do wprowadzania wartości",
+              "Przycisk Enter zatwierdza wprowadzoną wartość"
+            ]
+          },
+          "secondParagraph": {
+            "title": "AddToValue(), ValueReset()",
+            "description": "Metody służące do sumowania i resetowania wprowadzonej wartości",
+            "img": ""
+          }
+        },
+        "secondVersion": {
+          "firstParagraph": {
+            "title": "Rozszerzona wersja komponentu",
+            "description": "W drugiej wersji komponentu zaimplementowany został przycisk do cofania ostatniej wprowadzonej cyfry (backspace) oraz możliwość customizacji panelu"
+          },
+          "secondParagraph": {
+            "title": "BackSpaceMethod()",
+            "description": "Metoda przywracająca wartość sprzed wybrania ostatniej cyfry",
+            "img": ""
+          },
+          "ThirdParagraph": {
+            "title": "setBackgroundColor(Color cl)",
+            "description": "Metoda pozwalająca ustawić kolor panelu, przy wywołaniu metody należy podać zmienną typu Color",
+            "img": ""
+          }
+        }
+      },
+      "tests" : {
+        "firstTest": {
+          "title": "Test wejścia klawiatury",
+          "description": "Sprawdzenie poprawnego wprowadzania wartości",
+          "expectations": "Metoda powinna zwrócić wprowadzoną wartość jako log konsoli",
+          "result": "Wartość zwrócona na konsoli zgadza się z wprowadzoną wartością"
+        },
+        "secondTest": {
+          "title": "Test funkcji resetu wartości",
+          "description": "Sprawdzenie popgrawnego resetu wartości po wywołanoiu funkcji",
+          "expectations": "Metoda powinna ustawić wartość klawaitury na 0",
+          "result": "Wartość zwrócona przez program wynosi 0"
+        },
+        "thirdTest": {
+          "title": "Test funkcji przycisku Backspace",
+          "description": "Sprawdzenie poprawności zmienionej wartości po wywołaniu funkcji BackSpaceMethod()",
+          "expectations": "Metoda powinna zwrócić wartość sprzed naciśnięcia ostatniego przycisku 0-9",
+          "result": "Wartość zwrócona przez program jest równa poprzedniej wartości"
+        }
+      }
+    }
+  }
+}
