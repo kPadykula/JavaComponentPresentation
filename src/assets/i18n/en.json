@@ -133,6 +133,8 @@
 		"thirdRow": {
 			"firstP": "Inputting values take place through keyboard",
 			"image": {
+				"calv2list": "Photo of second version",
+				"calversion2": "Photo of list with second version figures",
 				"triangle1": "Image of inputting H"
 			},
 			"secondP": "When all data is correct and we pressed the Enter button",

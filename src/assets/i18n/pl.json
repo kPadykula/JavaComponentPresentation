@@ -133,6 +133,8 @@
 		"thirdRow": {
 			"firstP": "Wprowadzanie danych odbywa się poprzez klawiaturę",
 			"image": {
+				"calv2list": "Zdjęcie drugiej wersji komponentu",
+				"calversion2": "Zdjęcie rozsuniętej listy drugiego komponentu",
 				"triangle1": "Zdjęcie wprowadzania H"
 			},
 			"secondP": "Po wprowadzeniu wszystkich danych i zatwierdzeniu przyciskiem 'Enter' ",
